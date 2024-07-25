@@ -14,7 +14,7 @@ const Navbar = () => {
             <div className="w-full flex justify-center">
                 <input
                     type="text"
-                    placeholder="Buscar..."
+                    placeholder="Busca..."
                     className="w-1/2 p-2 rounded-md focus:outline-none"
                 />
             </div>
