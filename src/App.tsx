@@ -2,11 +2,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import LandingLayout from './layouts/LandingLayout'
 import Home from './pages/landing/home'
-import Register from './pages/Auth/register'
+import Register from './pages/auth/register'
 import AuthLayout from './layouts/AuthLayout'
-import Login from './pages/Auth/login'
+import Login from './pages/auth/login'
 import DashboardLayout from './layouts/DashboardLayout'
 import HomeDashboard from './pages/dashboard/home-dashboard'
+import Products from './pages/landing/products/products'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 
         <Route path='/' element={<LandingLayout />} >
           <Route index element={<Home />} />
+          <Route path='product' element={<Products />} />
         </Route>
 
         <Route path='/' element={<DashboardLayout />} >
