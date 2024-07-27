@@ -1,11 +1,4 @@
-<<<<<<< Updated upstream
 
-const Login = () => {
-  return (
-    <div>login</div>
-  )
-}
-=======
 import { Link } from 'react-router-dom';
 
 const Login = () => {
@@ -83,6 +76,5 @@ const Login = () => {
         </div>
     );
 };
->>>>>>> Stashed changes
 
 export default Login
