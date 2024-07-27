@@ -1,11 +1,7 @@
+import { Product } from "../types/Props";
+
 interface ProductCardProps {
-    product: {
-        name: string;
-        image: string;
-        description: string;
-        price: number;
-        category: string;
-    };
+    product: Product
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
