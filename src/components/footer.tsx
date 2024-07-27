@@ -40,7 +40,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="mt-10 text-center text-gray-400">
-                    <p>&copy; 2024 Nombre de tu Compañía. Todos los derechos reservados.</p>
+                    <p>&copy; 2024 Electroluz. Todos los derechos reservados.</p>
                 </div>
             </div>
         </footer>

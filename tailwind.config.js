@@ -2,7 +2,11 @@
 export default {
   content: ["./src/**/*.{html,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      transitionDelay: {
+        '300': '300ms',
+      },
+    },
   },
   plugins: [],
 }
