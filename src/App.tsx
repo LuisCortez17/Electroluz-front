@@ -9,28 +9,32 @@ import DashboardLayout from './layouts/DashboardLayout'
 import HomeDashboard from './pages/dashboard/home-dashboard'
 import Products from './pages/landing/products/products'
 import Cart from './pages/landing/cart/cart'
+import Catalog from './pages/catalog/catalog'
 
 function App() {
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<AuthLayout />}>
-          <Route index path='login' element={<Login />} />
-          <Route path='register' element={<Register />} />
-        </Route>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<AuthLayout />}>
+            <Route index path='login' element={<Login />} />
+            <Route path='register' element={<Register />} />
+          </Route>
 
-        <Route path='/' element={<LandingLayout />} >
-          <Route index element={<Home />} />
-          <Route path='product' element={<Products />} />
-          <Route path='cart' element={<Cart />} />
-        </Route>
+          <Route path='/' element={<LandingLayout />} >
+            <Route index element={<Home />} />
+            <Route path='product' element={<Products />} />
+            <Route path='cart' element={<Cart />} />
+            <Route path='catalog' element={<Catalog />} />
+          </Route>
 
-        <Route path='/' element={<DashboardLayout />} >
-          <Route index element={<HomeDashboard />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+          <Route path='/' element={<DashboardLayout />} >
+            <Route index element={<HomeDashboard />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 

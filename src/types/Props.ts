@@ -1,9 +1,12 @@
 export interface Product {
+    id: number;
     name: string;
-    image: string;
     description: string;
-    price: number;
     category: string;
+    price: number;
+    stock: number;
+    brand: string;
+    images: string[];
 }
 
 export interface CartProduct {

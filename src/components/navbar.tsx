@@ -40,9 +40,8 @@ const Navbar: React.FC = () => {
   }, [lastScrollTop]);
 
   return (
-    <div className={`relative bg-blue-800 text-white z-40 transition-transform duration-300 ease-in-out ${
-      scrollingUp ? 'translate-y-0' : '-translate-y-full'
-    }`}>
+    <div className={`relative bg-blue-800 text-white z-40 transition-transform duration-300 ease-in-out ${scrollingUp ? 'translate-y-0' : '-translate-y-full'
+      }`}>
       <nav className="p-4 flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <div className='pl-2'>
@@ -53,12 +52,12 @@ const Navbar: React.FC = () => {
             </Link>
           </div>
           <div>
-          <button
-            className="focus:outline-none ml-8 p-2 rounded hover:bg-blue-700"
-            onClick={toggleCategories}
-          >
-            <FaBars className="text-white text-2xl" /> {/* Ajusta el tamaño aquí */}
-          </button>
+            <button
+              className="focus:outline-none ml-8 p-2 rounded hover:bg-blue-700"
+              onClick={toggleCategories}
+            >
+              <FaBars className="text-white text-2xl" /> {/* Ajusta el tamaño aquí */}
+            </button>
           </div>
         </div>
         <div className="w-full flex justify-center relative">
@@ -70,6 +69,11 @@ const Navbar: React.FC = () => {
           <div className="absolute left-1/4 transform -translate-x-1/6 h-full flex items-center pl-4 pointer-events-none">
             <FaSearch className="text-gray-400" />
           </div>
+        </div>
+        <div>
+          <Link to={"/catalog"}>
+            <h2>Catalogo</h2>
+          </Link>
         </div>
         <div className="flex items-center space-x-8 pr-4">
           <button className="focus:outline-none">

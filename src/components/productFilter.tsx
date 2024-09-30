@@ -38,6 +38,7 @@ const ProductFilter = ({ onFilterChange }: FiltersProps) => {
                     <option value="Electronics">Electronics</option>
                     <option value="Furniture">Furniture</option>
                     <option value="Clothing">Clothing</option>
+                    <option value="Luminarias">Luminarias</option>
                     {/* Añade más categorías según sea necesario */}
                 </select>
             </div>
